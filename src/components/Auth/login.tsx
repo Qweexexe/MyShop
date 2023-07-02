@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import axios from "axios";
 import Swal from "sweetalert2";
 import {Link} from "react-router-dom";
-import {loginError, loginSuccess} from "../../animations/animations";
+import {loginError, LoginMailError, loginSuccess} from "../../animations/animations";
 
 
 const Login: React.FC = () => {
@@ -25,19 +25,15 @@ const Login: React.FC = () => {
             response
                 .then(response => {
                     setResponseData(response.data)
+                    if(response.data.success){
+                        loginSuccess()
+                    }
+                    else{
+                        loginError()
+                    }
                 })
-            loginSuccess()
-            response.catch(err => {
-                loginError()
-            })
         } else {
-            Swal.fire({
-                position: 'top-end',
-                icon: 'error',
-                title: 'Input mail and password',
-                showConfirmButton: false,
-                timer: 1500
-            })
+            LoginMailError()
         }
 
     }

@@ -81,3 +81,13 @@ export const BuyAnimation = () => {
         timer: 3000
     })
 }
+
+export const LoginMailError = () => {
+    Swal.fire({
+        position: 'top-end',
+        icon: 'error',
+        title: 'Input mail and password',
+        showConfirmButton: false,
+        timer: 1500
+    })
+}

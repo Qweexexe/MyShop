@@ -28,11 +28,13 @@ const Auth: React.FC = () => {
             response
                 .then(response => {
                     setResponseData(response.data)
+                    if(response.data.success){
+                        registerSuccess()
+                    }
+                    else {
+                        registerError()
+                    }
                 })
-            registerSuccess()
-            response.catch(err => {
-                registerError()
-            })
         }
         else {
             registerFillError()
