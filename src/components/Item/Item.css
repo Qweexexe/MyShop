@@ -1,0 +1,94 @@
+.item {
+    margin: 50px 30px 0 30px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: all .5s ease;
+    box-shadow: 2px 8px 16px rgba(26, 31, 22, 0.15);
+    background: #2b2b2b;
+}
+
+.item_item {
+    width : inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.item_img {
+    width: 100%;
+    object-fit: contain;
+    height: 666px;
+    background: #fff;
+    border-radius: 5px 5px 0 0;
+    transition: all .5s ease;
+
+}
+
+.item_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 175px;
+}
+
+.item_add_cart {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 9px;
+    background: black;
+}
+
+.item_add_cart_icon {
+    width: 50px;
+}
+
+
+.item_name {
+    font-family: 'Cabin', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    margin: 10px 0 0 0;
+    padding: 0;
+    color: #ffffff;
+
+}
+
+.model {
+    font-family: 'Cabin', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 5px 0 0 0;
+    letter-spacing: -0.02em;
+    color: #60695C;
+}
+
+.item_cost {
+    font-family: 'Cabin', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 24px;
+    color: #ffffff;
+}
+
+
+.item:hover {
+    transition: all .5s ease;
+    transform: scale(1.02);
+}
+
+.item_add_cart:hover{
+    background: #3a3a;
+}

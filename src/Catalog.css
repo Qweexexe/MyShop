@@ -1,0 +1,11 @@
+
+
+.phone_wrapper, .laptops_wrapper, .parfumes, .furniture_wrapper, .jewellery_wrapper, .search_wrapper{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2,550px);
+}
+
+.item_img{
+    object-fit: cover;
+}

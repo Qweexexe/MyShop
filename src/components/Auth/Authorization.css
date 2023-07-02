@@ -1,0 +1,86 @@
+
+
+
+.auth_wrapper{
+    width: 65vw;
+    margin-bottom: 300px;
+    display: flex ;
+    justify-content: space-between;
+}
+
+
+.register_wrapper, input, .send{
+    box-shadow: 5px 12px 30px rgba(26, 31, 22, 0.15);
+}
+
+
+.register_wrapper, .login_wrapper {
+    width: 30vw;
+    height: 600px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background:rgba(50, 50, 50, 0.7);
+    transition: all .5s ease;
+}
+
+input {
+    align-items: center;
+    padding: 8px 16px;
+    font-family: 'Cabin';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background: #ffffff;
+    transition: all .5s ease;
+}
+
+input:focus{
+    transition: all .5s ease;
+    transform: scale(1.1);
+}
+
+input::placeholder{
+    color: #cccccc;
+}
+
+h3{
+    font-size: 30px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+
+.send, .login_button{
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    background: #12c2e9;
+}
+
+
+.send:hover , .login_button:hover{
+    background: #c471ed;
+}
+
+
+.register_wrapper:hover{
+    transform: scale(1.05) rotate(2deg);
+    transition: all .5s ease;
+}
+
+.login_wrapper:hover{
+    transform: scale(1.05) rotate(-2deg);
+    transition: all .5s ease;
+}
