@@ -76,10 +76,9 @@ export const BuyAnimation = () => {
         position: 'center',
         icon: 'success',
         title: 'Thank you for order :)',
-        text: 'Try to Login or Register to see more :)' +
-            'but disable SSL control',
+        text: 'Try to Login or Register to see more :)',
         showConfirmButton: false,
-        timer: 3000
+        timer: 3500
     })
 }
 
